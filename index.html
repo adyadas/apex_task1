@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Webpage</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #dbeafe, #f0fdf4);
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #1e3a8a;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    nav h2 {
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #facc15;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      background-color: #ffffffbb;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #0077cc;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+
+    main {
+      margin: 0 auto;
+      padding: 30px 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #1e3a8a;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 12px;
+      margin: 25px 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+
+
+    a {
+      color: #d62828;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      background-color: #10b981;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #059669;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      main {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <h2>MyWebsite</h2>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>🌐 Welcome to My  Webpage</h1>
+    <p>Explore the beauty of web development with HTML, CSS, and JavaScript.</p>
+  </header>
+
+  <!-- Main Body -->
+  <main>
+    <h2>🚀 What You’ll Learn</h2>
+    <p>This page teaches you how to create a complete, structured, and beautiful webpage using HTML, CSS, and JavaScript. It includes a navbar, header, main content area, and a footer.</p>
+
+    <div class="image-container">
+       <img src="img1.png" alt="Web Development Image">
+    </div>
+
+
+    <p>Visit <a href="https://www.w3schools.com" target="_blank">W3Schools</a> to learn more and practice your skills.</p>
+
+    <button onclick="showMessage()">🎉 Click Me!</button>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>||All rights are reversed ||Designed  by Adya Das.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function showMessage() {
+      alert("🎉 Thanks for clicking! Keep learning and building!");
+    }
+  </script>
+</body>
+</html>
